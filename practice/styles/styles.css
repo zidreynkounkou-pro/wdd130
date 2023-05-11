@@ -1,0 +1,51 @@
+a {
+    font-size: 1.5em;
+}
+
+a:hover {
+    background-color: white;
+    color: steelblue;
+}
+main h2 {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+main p {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+nav, footer {
+    text-align: center;
+    background-color: steelblue;
+    color: white;
+    padding: 10px
+}
+
+footer p {
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    width: 80%;
+}
+
+.main-para {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+#active {
+    color: green;
+}
