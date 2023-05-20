@@ -1,4 +1,11 @@
 body, h1, img {
-    height: 60%;
-    width: 50%;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: steelblue;
+    color: white;
+    font-size: 1.5em;
+}
+.text {
+    text-align: center;
 }
