@@ -1,10 +1,18 @@
+body {
+    margin: 0;
+}
+
 a {
     font-size: 1.5em;
+    color: white;
+    padding: 25px;
+    text-decoration: none;
 }
 
 a:hover {
     background-color: white;
     color: steelblue;
+    text-decoration: underline;
 }
 main h2 {
     text-align: center;
@@ -12,6 +20,7 @@ main h2 {
 
 h1 {
     text-align: center;
+    margin: 50px 0;
 }
 
 main p {
@@ -29,12 +38,14 @@ nav, footer {
 footer p {
     font-size: 20px;
     margin: 20px auto;
+    padding: 25px;
 }
 
 img {
     width: 80%;
     display: block;
     margin: 0 auto;
+    border: 4px solid steelblue;
 }
 
 p {
@@ -44,8 +55,9 @@ p {
 .main-para {
     font-size: 1.5em;
     line-height: 1.5em;
+
 }
 
-#active {
+#active:hover {
     color: green;
 }
