@@ -154,52 +154,39 @@
 /* Activity 5 styles */ 
 .content5 {
   /* This is the parent of the activity 5 boxes. */
-  position:relative;
-  display: grid;
+  /*display: grid;*/
   height: 400px;
-  grid-template-columns: 1fr 1fr 1fr;
-  
 }
 .red5 { 
   width: 100%; 
   height: 100px; 
   background-color: red; 
-  grid-column: 1/4;
 } 
 .green5 { 
-  width: 100px; 
-  height: 100px; 
+  width: 220px; 
+  height: 220px; 
   background-color: green;
-  padding: 50px;
-  z-index: 1;
+  position: relative;
   float: left;
-
+  z-index: 1;
+  
 } 
 .yellow5 {
   width: 100%; 
-  height: 150%; 
+  height: 70%; 
   background-color: gold;
-  grid-column: 1/4;
-  bottom: 200px;
   position: relative;
-  float: left;
-  shape-outside: rectangle(0, 0, 200px, 200px);
+}
   
-  
-
-} 
 .blue5 {
   width: 100%; 
   height: 100px; 
-  background-color: blue; 
-  grid-column: 1/4;
-  bottom: 135%;
+  background-color: blue;
   position: relative;
-} 
+}  
 /* Activity 6 styles */ 
 .content6 {
   /* This is the parent of the activity 6 boxes. */
-  position: relatives;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -237,6 +224,8 @@
   bottom: 3%;
   z-index: 3;
   position: relative;
+  float: left;
+  shape-outside: auto;
  
 } 
 .blue6 {
