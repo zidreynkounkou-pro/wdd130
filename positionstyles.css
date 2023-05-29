@@ -2,153 +2,253 @@
 /* Activity 1 styles */
 .content1 {
   /* This is the parent of the activity 1 boxes. */
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  justify-items: center;
 }
 .red1 { 
-  width: 100px; 
+  width: 100%; 
   height: 100px; 
   background-color: red; 
+  grid-column: 1/3;
 
 } 
 .green1 {
-  width: 100px; 
-  height: 100px; 
-  background-color: green; 
-
+  width: 200px; 
+  height: 200px; 
+  background-color: green;
+ 
 } 
 .yellow1 {
-  width: 100px; 
-  height: 100px; 
+  width: 200px; 
+  height: 200px; 
   background-color: gold; 
 } 
 .blue1 {
-  width: 100px; 
+  width: 100%; 
   height: 100px; 
-  background-color: blue; 
+  background-color: blue;
+  grid-column: 1/3;
 } 
 /* Activity 2 styles */ 
 .content2 {
   /* This is the parent of the activity 2 boxes. */
+  position: relative;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px;
+
 }
 .red2 {
   width: 100px; 
   height: 100px; 
-  background-color: red; 
+  background-color: red;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: absolute;
 } 
 .green2 { 
   width: 100px; 
   height: 100px; 
-  background-color: green; 
-} 
+  background-color: green;
+  top: 50px;
+  left: 50px;
+  z-index: 2;
+  position: absolute;
+  
+}
 .yellow2 {
   width: 100px; 
   height: 100px; 
-  background-color: gold; 
+  background-color: gold;
+  top: 100px;
+  left: 100px;
+  z-index: 3;
+  position: absolute;
 } 
 .blue2 {
   width: 100px; 
   height: 100px; 
-  background-color: blue; 
+  background-color: blue;
+  top: 150px;
+  left: 150px;
+  z-index: 4;
+  position: absolute;
 } 
 /* Activity 3 styles */ 
 .content3 {
   /* This is the parent of the activity 3 boxes. */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-gap: 0;
+  justify-items: left;
+
 }
 .red3 {
-  width: 100px; 
+  width: 100%; 
   height: 100px; 
-  background-color: red; 
+  background-color: red;
+  grid-column: 1/4; 
 } 
 .green3 {
-  width: 100px; 
-  height: 100px; 
+  width: 70%; 
+  height: 200px; 
   background-color: green;
+  grid-column: 1/3;
+
+  
+  
 } 
 .yellow3 {
-  width: 100px; 
-  height: 100px; 
-  background-color: gold; 
+  width: 135%;  
+  height: 200px; 
+  background-color: gold;
+  grid-column: 3/5;
+  /*padding-right: 10%;*/ 
+  position: relative;
+  right: 35%;
+  
+  
+
+
 } 
 .blue3 {
-  width: 100px;
+  width: 100%;
   height: 100px; 
   background-color: blue; 
+  grid-column: 1/4;
 } 
 /* Activity 4 styles */ 
 .content4 {
   /* This is the parent of the activity 4 boxes. */
+  display: grid;;
   height: 400px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .red4 {
-  width: 100px; 
-  height: 100px; 
-  background-color: red; 
+  width: 100%; 
+  height: 100%; 
+  background-color: red;
+  grid-row: 1/4;
 } 
 .green4 {
-  width: 100px; 
-  height: 100px; 
+  width: 100%; 
+  height: 150%; 
   background-color: green; 
+  grid-column: 2/4;
 } 
 .yellow4 {
-  width: 100px; 
-  height: 100px; 
-  background-color: gold; 
+  width: 100%; 
+  height: 150%; 
+  background-color: gold;
+  grid-column: 2/4;
 } 
 .blue4 {
-  width: 100px; 
-  height: 100px; 
-  background-color: blue; 
+  width: 100%; 
+  height: 100%; 
+  background-color: blue;
+  grid-column: 2/4;
 } 
 /* Activity 5 styles */ 
 .content5 {
   /* This is the parent of the activity 5 boxes. */
+  position:relative;
+  display: grid;
   height: 400px;
+  grid-template-columns: 1fr 1fr 1fr;
+  
 }
 .red5 { 
-  width: 100px; 
+  width: 100%; 
   height: 100px; 
   background-color: red; 
+  grid-column: 1/4;
 } 
 .green5 { 
   width: 100px; 
   height: 100px; 
-  background-color: green; 
+  background-color: green;
+  padding: 50px;
+  z-index: 1;
+  float: left;
 
 } 
 .yellow5 {
-  width: 100px; 
-  height: 100px; 
-  background-color: gold; 
+  width: 100%; 
+  height: 150%; 
+  background-color: gold;
+  grid-column: 1/4;
+  bottom: 200px;
+  position: relative;
+  float: left;
+  shape-outside: rectangle(0, 0, 200px, 200px);
+  
+  
 
 } 
 .blue5 {
-  width: 100px; 
+  width: 100%; 
   height: 100px; 
   background-color: blue; 
+  grid-column: 1/4;
+  bottom: 135%;
+  position: relative;
 } 
 /* Activity 6 styles */ 
 .content6 {
   /* This is the parent of the activity 6 boxes. */
+  position: relatives;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .red6 {
   width: 100px; 
-  height: 100px; 
-  background-color: red; 
+  height:100px; 
+  background-color: red;
+  padding: 100px;
+  padding-left: 100%;
+  top: 0;
+  left: 0 ;
+  z-index: 1;
+  position: relative;
+  
+  
 } 
 .green6 {
-  width: 100px; 
-  height: 100px; 
-  background-color: green; 
+  width: 200px; 
+  height: 200px; 
+  background-color: green;
+  position: relative;
+  padding: 40px;
+  grid-column: 1;
+  top: 45%;
+  z-index: 2;
+
 } 
 .yellow6 {
   width: 100px; 
   height: 100px; 
-  background-color: gold; 
+  background-color: gold;
+  padding: 100px;
+  padding-top: 115%;
+  left:60%;
+  bottom: 3%;
+  z-index: 3;
+  position: relative;
+ 
 } 
 .blue6 {
   width: 100px; 
   height: 100px; 
-  background-color: blue; 
+  background-color: blue;
+  padding: 200px;
+  bottom: 30%;
+  right: 90%;
+  z-index: 1;
+  position: relative;
+  
 } 
 
 
