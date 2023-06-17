@@ -78,6 +78,7 @@ header {
     background-color:#f77f00;
     display: grid;
     grid-template-columns: 150px auto;
+    margin: 0;
 }
 
 nav a:hover {
@@ -221,6 +222,20 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+/* River page style*/
+
+h1 {
+    text-align: center;
+}
+.text {
+    text-align: center;
+}  
+.rivemg {
+    
+    width: 98.7%;
+    border: 10px solid  #f77f00;;
 }
 
 /* Media queries */
