@@ -1,0 +1,159 @@
+
+.section-logo {
+    display: flex;
+    margin: 1px 10px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.hh1 {
+    font-size: 25px;
+    font-family: comme;
+    position: relative;
+    right: -220px;
+}
+.all-area {
+    margin: 0 auto;
+    max-width: 1700px;
+    background-color:  #edf6f9;
+
+}
+
+.section-logo .logo {
+    width: 100px;
+    height: 100px;
+    
+}
+.section-logo .head-text {
+    align-self: center;
+    font-size: 25px;
+    color:#006d77
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #006d77;
+}
+nav div {
+    padding: 25px;
+}
+nav div:hover {
+    background-color: #edf6f9;
+    color: #006d77
+}
+nav a {
+    color: #edf6f9;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #edf6f9;
+    color: #006d77;
+}
+.img1 {
+    width: 200%;
+}
+.text2 {
+    width: 200px;
+    grid-column: 2;
+    grid-row: 3;
+
+}
+
+.img12 {
+    width: 200%;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: 20px 50px;
+    align-content: center;
+    font-family: "Yanone Kaffeesatz";
+    
+}
+/* learn about me*/
+.me {
+    grid-column: 2;
+}
+
+
+.div-img-church {
+    width: 50%;
+    height: 65%;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.img2 {
+    width: 50%;
+    height: 65%;
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.my-text {
+    grid-column: 1;
+    grid-row: 2/5;
+    text-align: center;
+}
+.my-text p {
+    font-size: 20px;
+}
+
+.second-text {
+    grid-row: 5;
+    grid-column: 1/3;
+    text-align: center;
+
+}
+
+.foot {
+    display: flex;
+    background-color: #006d77;
+    justify-content: space-around;
+    padding: 40px;
+    margin-bottom: -100px;
+    align-items: center;
+}
+
+.foot p {
+    text-align: center;
+}
+
+.foot div a:hover {
+    color: #edf6f9;;
+    text-decoration: underline;
+}
+
+.foot div a {
+    text-decoration: none;
+    color: #edf6f9;
+}
+
+.whatsapp{
+    width: 60px;
+}
+
+/* Media queries*/
+
+@media screen and (max-width: 900px) {
+    .page, .home-page {
+        display: block;
+        text-align: center;
+    
+    }
+
+    }
+    .foot {
+        flex-wrap: wrap;
+    }
+    .page {
+        border: 1px solid#006d77;
+
+}}
