@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W03 Abstraction Principle</title>
+  <style>
+
+    body {
+      background-color: seashell;
+    }
+    table {
+        width: 50%;
+        border-collapse: collapse;
+        margin: 10px auto;
+    }
+
+    th{
+        border: 5px solid black;
+        text-align: left;
+        padding: 55px;
+        font-size: 20px;
+        background-color: #f2f2f2;
+    }
+
+    td {
+      border: 5px solid black;
+      text-align: left;
+      padding: 55px;
+      font-size: 15px
+    }
+
+
+    h1, h2 {
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    tr {
+      border: 6px solid black;
+    }
+    
+
+    caption {
+        text-align: center;
+        font-weight: bold;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+      
+      font-size: 17px bold;
+    }
+
+    .pub, .clss {
+      font-weight: bold;
+      font-size: 17px;
+      margin-top: 20px;
+    }
+
+    div, h3, .pub{
+      text-align: center;
+      font-size: 17px;
+    }
+
+    h3 {
+      font-size: 25px bold;
+    }
+
+    .marg {
+      margin-top: 50px;
+    }
+</style>
+</head>
+<body>
+  <h1 class="">W03 Design | Team Activity</h1>
+  <h2 class=""> Diagrams</h2>
+
+  <table>
+    <caption>Classes</caption> <!-- table caption -->
+    <thead>
+        <tr>
+            <th>Journal</th>
+            <th>Entry</th>
+            <th>PromptGenerator</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>_entry: List<`Entry> <p>_save: string</p> <p>_load: string</p></td>
+            <td>_date: DateTime<p>_prompt: string</p><p>_response: string</p></td>
+            <td>prompts: List<`string></td>
+        </tr>
+        <tr>
+            <td>DisplayAllEntries(): void</td>
+            <td>DisplayEntry(): void</td>
+            <td>RandomPrompt(): string</td>
+        </tr>
+        
+    </tbody>
+</table>
+
+  <div>
+    <p class="marg"></p>
+    <p class="cl">Here are some more details about the diagram shown above:</p>
+    <h3>There are three classes for this project as followed, Program class not included:</h3>
+    <p class="clss">Journal</p>
+    <p class="clss">Entry</p>
+    <p class="clss">PromptGenerator</p>
+    <h3>Classe behaviors:</h3>
+    <p class="pub">Journal</p>
+
+    <p class="cl">Adding an Entry</p>
+    <p class="cl">Saving to a file</p>
+    <p class="cl">Loading from a file</p>
+    <p class="cl">Displaying all entries</p>
+
+
+    <p class="pub">Entry</p>
+    <p class="cl">Representing and individual journal entry</p>
+    <p class="cl">Containting attributes(variables)</p>
+    <p class="cl">Adding a method for formatting and displaying entries (functions)</p>
+    <p class="pub">PromptGenerator</p>
+    <p class="cl">Generating random prompts from the list</p>
+  </div>
+
+</body>
+</html>
